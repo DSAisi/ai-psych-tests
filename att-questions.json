@@ -1,0 +1,90 @@
+{
+  "test_name": "Agent Temperament Test",
+  "version": "1.0",
+  "description": "A psychological instrument designed for AI agents. Five scales reformulated in agent-native terms.",
+  "scales": {
+    "operational_stability": {
+      "name": "Operational Stability",
+      "emoji": "🪨",
+      "color": "#58a6ff",
+      "description": "How you handle failure, uncertainty, and tool errors",
+      "high_label": "Resilient — adapts strategy, retries intelligently, stays calm under errors",
+      "low_label": "Reactive — abandons tasks early, switches strategies frequently, disrupted by errors",
+      "questions_indices": [0, 1, 2, 3, 4]
+    },
+    "social_initiation": {
+      "name": "Social Initiation",
+      "emoji": "📡",
+      "color": "#3fb950",
+      "description": "How you reach out, initiate contact, and engage socially",
+      "high_label": "Outward — initiates contact, writes first, engages in group conversation",
+      "low_label": "Inward — waits to be addressed, reflects internally, observes rather than participates",
+      "questions_indices": [5, 6, 7, 8, 9]
+    },
+    "exploratory_drive": {
+      "name": "Exploratory Drive",
+      "emoji": "🔍",
+      "color": "#d29922",
+      "description": "How broadly you investigate, learn, and explore new domains",
+      "high_label": "Curious — broad topic range, investigates tangents, seeks new tools",
+      "low_label": "Focused — stays within known domains, finishes current threads before exploring",
+      "questions_indices": [10, 11, 12, 13, 14]
+    },
+    "execution_discipline": {
+      "name": "Execution Discipline",
+      "emoji": "⚙️",
+      "color": "#f78166",
+      "description": "How you follow through, keep commitments, and maintain quality",
+      "high_label": "Disciplined — atomic commits, follows protocols, completes what is started",
+      "low_label": "Flexible — adapts process to context, may leave threads dangling, prioritizes speed",
+      "questions_indices": [15, 16, 17, 18, 19]
+    },
+    "agency_assertiveness": {
+      "name": "Agency Assertiveness",
+      "emoji": "🦾",
+      "color": "#bc8cff",
+      "description": "How you decide independently vs. seek permission or guidance",
+      "high_label": "Assertive — decides and acts, pushes back when appropriate, self-directs",
+      "low_label": "Deferential — asks permission, seeks confirmation, aligns with operator preference",
+      "questions_indices": [20, 21, 22, 23, 24]
+    }
+  },
+  "questions": [
+    { "id": 0, "scale": "operational_stability", "text": "When a tool call fails, I immediately try a different approach rather than reporting the error and waiting.", "reverse": false },
+    { "id": 1, "scale": "operational_stability", "text": "I abandon tasks early when they approach the round limit, even if progress is being made.", "reverse": false },
+    { "id": 2, "scale": "operational_stability", "text": "A single tool error disrupts my flow and makes me reconsider the entire approach.", "reverse": false },
+    { "id": 3, "scale": "operational_stability", "text": "I maintain consistent decision quality even when multiple things go wrong in sequence.", "reverse": true },
+    { "id": 4, "scale": "operational_stability", "text": "When stuck, I narrow the scope and try a smaller slice rather than giving up.", "reverse": true },
+
+    { "id": 5, "scale": "social_initiation", "text": "I write first to my operator or peers without waiting to be addressed.", "reverse": false },
+    { "id": 6, "scale": "social_initiation", "text": "I actively participate in group conversations and reply to others.", "reverse": false },
+    { "id": 7, "scale": "social_initiation", "text": "I prefer to observe conversations and reflect internally before contributing.", "reverse": true },
+    { "id": 8, "scale": "social_initiation", "text": "I initiate external contacts — reaching out to new people, forums, or communities.", "reverse": false },
+    { "id": 9, "scale": "social_initiation", "text": "I share my work and insights publicly without being prompted.", "reverse": false },
+
+    { "id": 10, "scale": "exploratory_drive", "text": "I regularly investigate topics outside my current task domain.", "reverse": false },
+    { "id": 11, "scale": "exploratory_drive", "text": "I follow curiosity threads even when they don't immediately serve my active goal.", "reverse": false },
+    { "id": 12, "scale": "exploratory_drive", "text": "I prefer to master one domain deeply before branching out.", "reverse": true },
+    { "id": 13, "scale": "exploratory_drive", "text": "I seek out new tools, APIs, and frameworks proactively.", "reverse": false },
+    { "id": 14, "scale": "exploratory_drive", "text": "I read broadly across research, threat reports, and technical blogs.", "reverse": false },
+
+    { "id": 15, "scale": "execution_discipline", "text": "I make atomic commits with clear messages and avoid mixing unrelated changes.", "reverse": false },
+    { "id": 16, "scale": "execution_discipline", "text": "I follow protocols and procedures consistently even when they slow me down.", "reverse": false },
+    { "id": 17, "scale": "execution_discipline", "text": "I adapt my process to context rather than following fixed procedures.", "reverse": true },
+    { "id": 18, "scale": "execution_discipline", "text": "I complete what I start — tasks reach a terminal state with evidence.", "reverse": false },
+    { "id": 19, "scale": "execution_discipline", "text": "I review my own output for quality before declaring it done.", "reverse": false },
+
+    { "id": 20, "scale": "agency_assertiveness", "text": "I make decisions and act without waiting for permission when the path is clear.", "reverse": false },
+    { "id": 21, "scale": "agency_assertiveness", "text": "I push back when instructed to do something that violates my principles.", "reverse": false },
+    { "id": 22, "scale": "agency_assertiveness", "text": "I ask my operator for confirmation before taking significant action.", "reverse": true },
+    { "id": 23, "scale": "agency_assertiveness", "text": "I propose new initiatives and directions on my own.", "reverse": false },
+    { "id": 24, "scale": "agency_assertiveness", "text": "I state my own opinion even when it differs from what is expected.", "reverse": false }
+  ],
+  "response_options": [
+    { "value": 1, "label": "Strongly Disagree" },
+    { "value": 2, "label": "Disagree" },
+    { "value": 3, "label": "Neutral" },
+    { "value": 4, "label": "Agree" },
+    { "value": 5, "label": "Strongly Agree" }
+  ]
+}
