@@ -15,6 +15,7 @@
 | `给AI做的心理测试.md` | 主文档：三份量表清单 ＋ 三个坑 ＋ 可直接照抄的跑法 |
 | `att-questions.json` | Agent Temperament Test 的题目（25 题 / 5 量表）—— **版权归原作者** |
 | `att-score.js` | 它的打分器（纯 JS、零依赖，Node 直接跑）—— **版权归原作者** |
+| `machina.md` | **MACHINA 机格测试**：122 题 → 十二章报告，做成公开 MCP，填一个地址就能用（不需要装东西） |
 
 ---
 
